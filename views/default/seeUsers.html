@@ -1,0 +1,9 @@
+{{if users:}}
+	{{for user in users:}}
+		<p>
+		First name is {{=user.db_firstname}}, Last name is {{=user.db_lastname}}, email is {{=user.db_email}}
+		</p>
+	{{pass}}
+{{else:}}
+	<h2>No Users Found</h2>
+{{pass}}
