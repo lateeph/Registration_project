@@ -1,15 +1,48 @@
-<form action="{{=URL('authenticate')}}" method="post">
-	<div>
-		<label for="email">Email</label>
-		<input type="email" name="email">
-	</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{{=URL('static','css/bootstrap.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{=URL('static','css/style.css')}}">
+	<h1>CODE SCHOOL</h1>
+</head>
+<body>
+	<div class="container background">
+		<div class="row">
+			<div class="col-md-8">
+				<p style="color:black;">OUR MISSION
+At CODE SCHOOL, we mentor individuals into professional programmers in an immersive classroom setting. Located in Madina, Accra, we offer a full-time, 12-week Web Development course designed to prepare students for a career in software development. 
+<br><br>
+OUR INSTRUCTORS
+Our full-time instructors are industry experts and passionate educators who are committed to the success of every single student. Our courses are structured to provide in-person, one-on-one mentorship and guidance. 
+<br><br>
+OUR CURRICULUM
+Our structured curriculum is designed with input from Upstate employers to give students a full-stack foundation and to prepare them for careers in technology - right here at home or wherever their career path may go.</p>
+			</div>
+			<div class="col-md-4 form-div1">
+				<form action="{{=URL('authenticate')}}" method="post">
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" name="email">
+					</div>
+					<div class="form-group">
+						<label for "password">Password</label>
+						<input type="password" class="form-control" name="password">
+					</div>
+					<div class="form-group">
+						<input type="submit" class="form-control btn btn-primary"  value="Login">
+					</div>
+					<div class="checkbox">
+		 				<label>
+		 					<input type="checkbox"> Remember me
+		 				</label>
+		 			</div>
 
-	<div>
-		<label for "password">Password</label>
-		<input type="password" name="password">
+				</form>
+			</div>
+		</div>
 	</div>
-	
-	<div>
-		<input type="submit" value="Login">
-	</div>
-</form>
+	<script src="{{=URL('static','js/jquery.js')}}"></script>	
+	<script src="{{=URL('static','js/bootstrap.js')}}"></script>
+</body>
+</html>

@@ -1,25 +1,51 @@
-<form action="{{=URL('store')}}" method="post">
-	<div>
-		<label for="firstname">First Name</label>
-		<input type="text" name="firstname">
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{{=URL('static','css/bootstrap.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{=URL('static','css/style.css')}}">
+	<h1>CODE SCHOOL</h1>
+</head>
+<body>	
+	<div class="container" style="background-image":("{{=URL('static','bd.jpg')}})></div>
+		<div class="row">
+			<div class="col-md-6">
+				<p>OUR MISSION
+				At CODE SCHOOL, we mentor individuals into professional programmers in an immersive classroom setting. Located in Madina, Accra, we offer a full-time, 12-week Web Development course designed to prepare students for a career in software development.</p> 
+				<br><br>
+				<p>OUR INSTRUCTORS
+				Our full-time instructors are industry experts and passionate educators who are committed to the success of every single student. Our courses are structured to provide in-person, one-on-one mentorship and guidance.</p> 
+				<br><br>
+				<p>OUR CURRICULUM
+				Our structured curriculum is designed with input from Upstate employers to give students a full-stack foundation and to prepare them for careers in technology - right here at home or wherever their career path may go.</p>
+			</div>
+			<div class="col-md-6 form-div">
+				<form action="{{=URL('store')}}" method="post">
+					<div class="form-group">
+						<label for="firstname">First Name</label>
+						<input type="text" class="form-control" name="firstname">
+					</div>
+					<div class="form-group">
+						<label for="lastname">Last Name</label>
+						<input type="text" class="form-control" name="lastname">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" name="email">
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" class="form-control" name="password">
+					</div>
+					<div>
+						<input type="submit" class="btn btn-primary" value="Save User">
+						<button type="button" class="btn btn-default"><a href="{{=URL('login.html')}}">Login</button>
+					</div>
+				</form>
+			</div>	
+		</div>
 	</div>
-
-	<div>
-		<label for="lastname">Last Name</label>
-		<input type="text" name="lastname">
-	</div>
-
-	<div>
-		<label for="email">Email</label>
-		<input type="email" name="email">
-	</div>
-
-	<div>
-		<label for="password">Password</label>
-		<input type="password" name="password">
-	</div>
-
-	<div>
-		<input type="submit" value="Save User">
-	</div>
-</form>
+	<script src="{{=URL('static','js/jquery.js')}}"></script>	
+	<script src="{{=URL('static','js/bootstrap.js')}}"></script>
+</body>
+</html>
