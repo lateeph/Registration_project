@@ -4,22 +4,25 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="{{=URL('static','css/bootstrap.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{=URL('static','css/style.css')}}">
-	<h1>CODE SCHOOL</h1>
+	<h1><font color="white">CODE SCHOOL</font></h1>
+	<style>
+	body 
+	</style>
 </head>
-<body background="{{=URL('static','images/bd.jpg')}}">	
+<body background="{{=URL('static','images/lap.jpg')}}"><font color="white">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
 				<p>OUR MISSION
-				At CODE SCHOOL, we mentor individuals into professional programmers in an immersive classroom setting. Located in Madina, Accra, we offer a full-time, 12-week Web Development course designed to prepare students for a career in software development.</p> 
+				At CODE SCHOOL, we mentor individuals into professional programmers in an immersive classroom setting. Located in Madina, Accra, we offer a full-time, 12-week Web Development course designed to prepare students for a career in software development. 
 				<br><br>
-				<p>OUR INSTRUCTORS
-				Our full-time instructors are industry experts and passionate educators who are committed to the success of every single student. Our courses are structured to provide in-person, one-on-one mentorship and guidance.</p> 
+				OUR INSTRUCTORS
+				Our full-time instructors are industry experts and passionate educators who are committed to the success of every single student. Our courses are structured to provide in-person, one-on-one mentorship and guidance. 
 				<br><br>
-				<p>OUR CURRICULUM
+				OUR CURRICULUM
 				Our structured curriculum is designed with input from Upstate employers to give students a full-stack foundation and to prepare them for careers in technology - right here at home or wherever their career path may go.</p>
 			</div>
-			<div class="col-md-6 form-div>
+			<div class="col-md-6 form-div">
 				<form action="{{=URL('store')}}" method="post">
 					<div class="form-group">
 						<label for="firstname">First Name</label>
@@ -39,13 +42,13 @@
 					</div>
 					<div>
 						<input type="submit" class="btn btn-primary" value="Save User">
-						<button type="button" class="btn btn-default"><a href="{{=URL('login.html')}}">Login</button>
+						<a href="{{=URL('login.html')}}">Login</a>
 					</div>
 				</form>
 			</div>	
 		</div>
 	</div>
 	<script src="{{=URL('static','js/jquery.js')}}"></script>	
-	<script src="{{=URL('static','js/bootstrap.js')}}"></script>
+	<script src="{{=URL('static','js/bootstrap.js')}}"></script></font>
 </body>
 </html>
