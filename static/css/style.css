@@ -1,16 +1,11 @@
 .form-div {
-	margin-top: 75px;
+	margin-top: 1px;
 	border: 1px solid #333;
-	padding: 30px;
+	padding: 20px;
 }
 
 .form-div1 {
 	margin-top: 30px;
 	border: 1px solid #333;
 	padding: 20px;
-}
-
-.background {
-   background-image: "{{=URL('static','images/bd.jpg')}}">;
-   height: 700px;
 }
