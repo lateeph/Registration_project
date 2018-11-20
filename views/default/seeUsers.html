@@ -22,7 +22,9 @@
     							<h3 class="panel-title">Summary</h3>
   							</div>
   							<div class="panel-body">
-    							<p>First name is {{=user.db_firstname}},<br> Last name is {{=user.db_lastname}},<br> Email is {{=user.db_email}}
+    							<p>First name is {{=user.firstname}},<br> Last name is {{=user.lastname}},<br> Email is {{=user.email}}
+    								<a href="{{ =URL('delete/' + str(user.id) )}}">Delete</a><br>
+    								<a href="{{ =URL('edit/' + str(user.id))}}">Edit</a>
 								</p>
   							</div>
 						</div>
